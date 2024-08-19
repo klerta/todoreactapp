@@ -32,7 +32,7 @@ const AddTask = () => {
         Add new task <AiOutlinePlus className='ml-2' size={18} />
       </button>
 
-      <Modal modalOpen={modalOpen} setModalOpen={setModalOpen}>
+      <Modal modalOpen={modalOpen} setModalOpen={setModalOpen}> modal for add todo
         <form onSubmit={handleSubmitNewTodo}>
           <h3 className='font-bold text-lg'>Add new task</h3>
           <div className='modal-action'>

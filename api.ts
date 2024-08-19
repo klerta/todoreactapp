@@ -22,7 +22,7 @@ export const getAllTodos = async (): Promise<ITask[]> => {
   }
 
   export const editTodo = async (todo: ITask): Promise<ITask> => {
-    const res = await fetch(`${baseUrl} ${todo.id}`, {
+    const res = await fetch(`${baseUrl}/${todo.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -35,7 +35,7 @@ export const getAllTodos = async (): Promise<ITask[]> => {
 
   
   export const deleteTodo = async (id: string): Promise<void> => {
-     await fetch(`${baseUrl} ${id}`, {
+     await fetch(`${baseUrl}/${id}`, {
       method: 'DELETE',
     })
   }
